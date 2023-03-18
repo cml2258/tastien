@@ -2,3 +2,80 @@
   height: 100vh;
   background-color: #f6f6f6;
 }
+/* 好多页面会写，搬出去用 */
+/* 样式组件的复用  BEM*/
+/* block tab */
+.rx_tab{
+  display: flex;
+  height: 100%;
+}
+/* Element tab__item */
+.rx_tab__item{
+  position: relative;
+  flex: 1;
+  height: 100%;
+  /* 用弹性布局来做元素居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 206, 211);
+}
+/* 问题代码注释掉 */
+/* .rx_tab__item:before {
+  content: '';
+  position:absolute;
+  top: 20rpx;
+  right: 0;
+  bottom: 20rpx;
+  width: 1px;
+  background: rgba(0,0,0,0.2);
+}
+.rx_tab__item:last-child:before {
+  display: none;
+} 
+.rx_tab__item-on:after {
+  content: '';
+  position: absolute;
+  bottom: -10rpx;
+  left: 80rpx;
+  right: 80rpx;
+  height: 1px;
+  background: #f01414;
+} */
+/*
+
+
+/* Modifier 状态 on 激活状态*/
+/* 谁拥有这种类名，就有这个状态 */
+.rx_tab__item-on{
+  color: #e24343;
+}
+
+/* 
+  before 伪元素 没有标签，类似于block，但是css
+   内容开始之前 
+   内容结束之后
+  border box-sizing一部分  盒子模型 会影响元素在页面中的占位
+*/
+.rx_tab__item:before {
+  content: '';
+  position:absolute;
+  top: 20rpx;
+  right: 0;
+  bottom: 20rpx;
+  width: 1px;
+  background: rgba(0,0,0,0.2);
+}
+.rx_tab__item:last-child:before {
+  display: none;
+} 
+.rx_tab__item-on:after {
+  content: '';
+  position: absolute;
+  bottom: -10rpx;
+  left: 80rpx;
+  right: 80rpx;
+  height: 1px;
+  background: #f01414;
+}
+ 

@@ -1,0 +1,15 @@
+/* pages/didi/didi.wxss */
+/* swiper-item{
+  height: 200rpx;
+} */
+/* 行内样式覆盖所有样式 */
+/* ！important 可以获得最高的样式 */
+/* swiper-item:last-child{
+  height: 400rpx !important;
+} */
+.didi_menus{
+  height: 400rpx;
+}
+.higher_menus{
+  height: 600rpx;
+}

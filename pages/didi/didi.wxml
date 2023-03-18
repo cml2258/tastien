@@ -1,0 +1,16 @@
+<!--pages/didi/didi.wxml-->
+<view class="page">
+<view style="height: 50vh;">
+</view>
+<!-- indicator-color="gray"没选择的灰色的， indicator-active-color="red"选择的是红色的点 -->
+  <swiper class="didi_menus {{(menu_type == 1)&&'higher_menus'}}" indicator-dots="true" indicator-color="gray" indicator-active-color="red"
+  bindchange="menuChange">  
+
+    <swiper-item style="background-color: rgb(134, 173, 134);">
+      1
+    </swiper-item>
+    <swiper-item style="background-color: rgb(196, 165, 170);">
+      2
+    </swiper-item>
+  </swiper>
+</view>
